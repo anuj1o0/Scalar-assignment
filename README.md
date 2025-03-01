@@ -38,68 +38,34 @@ An AI-powered mentor that helps students learn Data Structures & Algorithms thro
 
 ### 1. Clone Repository
 ```bash
-git clone https://github.com/yourusername/dsa-teaching-assistant.git
-cd dsa-teaching-assistant
-2. Backend Setup
-bash
-Copy
-cd server
+git clone https://github.com/anuj1o0/Scalar-assignment.git
+cd Scalar-assignment
+```
+### 2. Backend Setup
+```bash
+cd gpt-backend
 npm install
-Create .env file:
+Start server: node index.js
+```
 
-env
-Copy
-OPENAI_API_KEY=your_openai_key_here
-PORT=5000
-Start server:
+### 3. Frontend Setup
+```bash
 
-bash
-Copy
-npm start
-3. Frontend Setup
-bash
-Copy
-cd ../client
+cd ../gpt-teaching-assitant
 npm install
-Start development server:
-
-bash
-Copy
 npm run dev
-Architecture 🏗️
-mermaid
-Copy
-sequenceDiagram
-    participant User
-    participant Frontend
-    participant Backend
-    participant OpenAI
-    
-    User->>Frontend: Submits question with LeetCode URL
-    Frontend->>Backend: POST /api/chat
-    Backend->>OpenAI: API request with formatted prompt
-    OpenAI->>Backend: Structured response
-    Backend->>Frontend: Filtered & validated answer
-    Frontend->>User: Display interactive response
-Usage Guide 📚
+```
+
+### Usage Guide 📚
+
 Start Session
-
-bash
-Copy
-# Run both services
-cd server && npm start
-cd client && npm run dev
 Ask Questions
-
 Paste LeetCode URL in first input
-
 Type your doubt in second input
-
 Click send (⮐) button
 
 Example Workflow
 
-Copy
 [User] How to optimize Two Sum?
 [Assistant] Let's explore efficient lookups. What data structure helps 
 with O(1) lookups? (Hint: Think about tradeoffs between time and space)
