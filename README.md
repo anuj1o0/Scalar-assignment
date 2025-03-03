@@ -47,6 +47,11 @@ cd gpt-backend
 npm install
 Start server: node index.js
 ```
+- Create a .env file in the server folder with the following content:
+```bash
+OPENAI_API_KEY=your_openai_key_here
+PORT=5000
+```  
 
 ### 3. Frontend Setup
 ```bash
